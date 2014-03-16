@@ -39,7 +39,7 @@ describe('Factory MySql Fixtures', function() {
 
   describe('.create', function() {
     it('creates a new fixture', function(done) {
-      Factory.create('person', { name: 'Fred', email: 'Email' }, function(err, result) {
+      Factory.create('person', { name: 'Fred1', email: 'Email1' }, function(err, result) {
         expect(err).to.be.null;
         result.should.to.not.be.empty;
         done();
@@ -58,12 +58,14 @@ describe('Factory MySql Fixtures', function() {
 
   describe('.define', function() {
     it('defines a new fixture', function(done) {
-      Factory.define('device', { hash: 'hash1', person_id: Factory.assoc('person', 'id') }, function(err, result) {
-        Factory.create('device', null, function(err, result) {
-          expect(err).to.be.null;
-          result.should.to.not.be.empty;
-          done();
-        });
+      
+      Factory.define('person', { name: 'Fred2', email: 'Email2' });
+      Factory.define('device', { hash: 'hash1', person_id: Factory.assoc('person', 'id') });
+
+      Factory.create('device', null, function(err, result) {
+        expect(err).to.be.null;
+        result.should.to.not.be.empty;
+        done();
       });
     });
   });
