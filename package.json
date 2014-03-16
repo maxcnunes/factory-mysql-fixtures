@@ -22,7 +22,7 @@
     "mysql"
   ],
   "author": "Max Claus Nunes",
-  "license": "MIT",
+  "license": [{ "type" : "MIT" , "url" : "http://raw.github.com/maxcnunes/factory-mysql-fixtures/master/LICENSE" }],
   "bugs": {
     "url": "https://github.com/maxcnunes/factory-mysql-fixtures/issues"
   },
