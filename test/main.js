@@ -42,6 +42,7 @@ describe('Factory MySql Fixtures', function() {
       Factory.create('person', { name: 'Fred1', email: 'Email1' }, function(err, result) {
         expect(err).to.be.null;
         result.should.to.not.be.empty;
+        result.should.to.be.at.least(1);
         done();
       });
     });
@@ -65,6 +66,7 @@ describe('Factory MySql Fixtures', function() {
       Factory.create('device', null, function(err, result) {
         expect(err).to.be.null;
         result.should.to.not.be.empty;
+        result.should.to.be.at.least(1);
         done();
       });
     });
