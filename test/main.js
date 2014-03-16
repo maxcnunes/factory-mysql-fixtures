@@ -9,7 +9,7 @@ var dbConf = {
   user: 'root',
   database: 'db-test',
   timezone: 'utc',
-  dbStructureFile: '/srv/build/structure.sql'
+  dbStructureFile: './build/structure.sql'
 };
 
 before(function cleanDB(cb) {

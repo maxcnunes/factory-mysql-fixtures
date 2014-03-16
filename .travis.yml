@@ -1,0 +1,7 @@
+language: node_js
+node_js:
+  - 0.11
+  - 0.10
+before_script:
+  - mysql -u root -e "create database \`db-test\` default character set utf8 collate utf8_general_ci"
+  - mysql -u root "db-test" < ./build/structure.sql

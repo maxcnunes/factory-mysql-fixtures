@@ -30,9 +30,6 @@ echo "PATH=/opt/node/bin:$PATH" >> /etc/profile.d/node.sh
 # reload /etc/profile
 source /etc/profile
 
-# install global npm modules
-npm install -g grunt-cli mocha
-
 # remove empty vagrant folder
 rm -rf /vagrant
 
