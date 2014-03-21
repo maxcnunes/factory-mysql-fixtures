@@ -33,8 +33,9 @@ Factory.config(dbConf);
 ### Defining Factories
 
 ```javascript
+var _nameIndex = 0;
 Factory.define('person', { 
-  name: 'Jack', 
+  name: function(cb) { cb('Jack - ' + _nameIndex++ ); } // lazy attribute
   email: 'jack@mail.com' 
 });
 

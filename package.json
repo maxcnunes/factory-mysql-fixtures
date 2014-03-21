@@ -15,14 +15,20 @@
   },
   "keywords": [ "factory", "test", "bdd", "tdd", "fixture", "mysql" ],
   "author": "Max Claus Nunes",
-  "license": [{ "type" : "MIT" , "url" : "http://raw.github.com/maxcnunes/factory-mysql-fixtures/master/LICENSE" }],
+  "license": [
+    {
+      "type": "MIT",
+      "url": "http://raw.github.com/maxcnunes/factory-mysql-fixtures/master/LICENSE"
+    }
+  ],
   "bugs": {
     "url": "https://github.com/maxcnunes/factory-mysql-fixtures/issues"
   },
   "homepage": "https://github.com/maxcnunes/factory-mysql-fixtures",
   "dependencies": {
     "async": "~0.2.10",
-    "mysql": "~2.1.1"
+    "mysql": "~2.1.1",
+    "lodash": "^2.4.1"
   },
   "devDependencies": {
     "chai": "~1.9.0",
