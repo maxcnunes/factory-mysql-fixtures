@@ -23,6 +23,7 @@ var dbConf = {
   host: 'localhost',
   user: 'root',
   database: 'db-test',
+  password: 'db-password', // optional
   timezone: 'utc',
   dbStructureFile: './build/structure.sql' // set your own script to reload initial data when calling clean method
 };
