@@ -1,6 +1,6 @@
 {
   "name": "factory-mysql-fixtures",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Factory to load fixtures on mysql database",
   "main": "lib/main.js",
   "directories": {
@@ -13,7 +13,14 @@
     "type": "git",
     "url": "git://github.com/maxcnunes/factory-mysql-fixtures.git"
   },
-  "keywords": [ "factory", "test", "bdd", "tdd", "fixture", "mysql" ],
+  "keywords": [
+    "factory",
+    "test",
+    "bdd",
+    "tdd",
+    "fixture",
+    "mysql"
+  ],
   "author": "Max Claus Nunes",
   "license": [
     {
